@@ -23,7 +23,7 @@ public class Task {
 	 
 	 private String description;
 	 
-	 private LocalDate date;
+	 private LocalDate dueDate;
 	 
 	 @Enumerated(EnumType.STRING)
 	 private Priority priority;
@@ -55,12 +55,13 @@ public class Task {
 		this.description = description;
 	}
 
-	public LocalDate getDate() {
-		return date;
+
+	public LocalDate getDueDate() {
+		return dueDate;
 	}
 
-	public void setDate(LocalDate date) {
-		this.date = date;
+	public void setDueDate(LocalDate dueDate) {
+		this.dueDate = dueDate;
 	}
 
 	public Priority getPriority() {
@@ -79,13 +80,14 @@ public class Task {
 		this.status = status;
 	}
 	
-	
-	 public Task(int id, String title, String description, LocalDate date, Priority priority, Status status) {
+
+
+	public Task(int id, String title, String description, LocalDate dueDate, Priority priority, Status status) {
 		super();
 		this.id = id;
 		this.title = title;
 		this.description = description;
-		this.date = date;
+		this.dueDate = dueDate;
 		this.priority = priority;
 		this.status = status;
 	}

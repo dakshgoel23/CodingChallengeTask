@@ -71,9 +71,9 @@ public class TaskController {
 			{
 				oldTask.setDescription(newTask.getDescription());
 			}
-			if(newTask.getDate()!=null)
+			if(newTask.getDueDate()!=null)
 			{
-				oldTask.setDate(newTask.getDate());
+				oldTask.setDueDate(newTask.getDueDate());
 			}
 			if(newTask.getPriority()!=null)
 			{
